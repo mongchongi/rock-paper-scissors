@@ -27,6 +27,7 @@
   justify-content: space-between;
 }
 
+.player__default-image,
 .player__choice-image {
   width: 300px;
   display: block;

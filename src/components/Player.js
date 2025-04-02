@@ -19,7 +19,19 @@ const Player = (props) => {
   return (
     <div className='player' style={{ borderColor: `${color}` }}>
       <h1>{props.name}</h1>
-      <img src={props.item && props.item.imgUrl} alt={props.item && props.item.name} className='player__choice-image' />
+      {result === '' ? (
+        <img
+          src='https://img.icons8.com/?size=1000&id=EtlPmfgnN7sW&format=png&color=0000000'
+          alt='Question mark'
+          className='player__default-image'
+        />
+      ) : (
+        <img
+          src={props.item && props.item.imgUrl}
+          alt={props.item && props.item.name}
+          className='player__choice-image'
+        />
+      )}
       <h2>{result}</h2>
     </div>
   );
