@@ -18,7 +18,7 @@ const Player = (props) => {
 
   return (
     <div className='player' style={{ borderColor: `${color}` }}>
-      <h1>{props.name}</h1>
+      <h1 className='player__name'>{props.name}</h1>
       {result === '' ? (
         <img
           src='https://img.icons8.com/?size=1000&id=EtlPmfgnN7sW&format=png&color=0000000'
@@ -32,7 +32,7 @@ const Player = (props) => {
           className='player__choice-image'
         />
       )}
-      <h2>{result}</h2>
+      <h2 className='player__result'>{result}</h2>
     </div>
   );
 };
