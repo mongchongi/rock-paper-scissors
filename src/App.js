@@ -5,15 +5,15 @@ import Player from './components/Player';
 const choice = {
   rock: {
     name: 'rock',
-    imgUrl: 'https://img.icons8.com/?size=1000&id=WhjOB64acCd0&format=png&color=000000',
+    imgUrl: 'https://img.icons8.com/?size=1000&id=PRTTDxFT5KYj&format=png&color=000000',
   },
   paper: {
     name: 'paper',
-    imgUrl: 'https://img.icons8.com/?size=1000&id=FXMQoDW7KHma&format=png&color=000000',
+    imgUrl: 'https://img.icons8.com/?size=1000&id=RzRwnSkyUsZV&format=png&color=000000',
   },
   scissors: {
     name: 'scissors',
-    imgUrl: 'https://img.icons8.com/?size=1000&id=MzcVIhXVJv5P&format=png&color=000000',
+    imgUrl: 'https://img.icons8.com/?size=1000&id=pbtp0CwLMwWn&format=png&color=000000',
   },
 };
 
