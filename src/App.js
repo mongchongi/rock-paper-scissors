@@ -30,14 +30,6 @@ const App = () => {
   };
 
   const judgement = (user, computer) => {
-    // user.name === computer.name => tie
-    // user.name === 'rock', computer.name === 'scissors' => user win
-    // user.name === 'rock', computer.name === 'paper' => user lose
-    // user.name === 'scissors', computer.name === 'paper' => user win
-    // user.name === 'scissors', computer.name === 'rock' => user lose
-    // user.name === 'paper', computer.name === 'rock' => user win
-    // user.name === 'paper', computer.name === 'scissors' => user lose
-
     if (user.name === computer.name) {
       return 'TIE';
     } else if (user.name === 'rock') {
