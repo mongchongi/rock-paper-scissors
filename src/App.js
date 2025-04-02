@@ -5,15 +5,15 @@ import Player from './components/Player';
 const choice = {
   rock: {
     name: 'rock',
-    imgUrl: 'https://img.icons8.com/?size=1000&id=WhjOB64acCd0&format=png&color=000000',
+    imgUrl: 'https://img.icons8.com/?size=1000&id=PRTTDxFT5KYj&format=png&color=000000',
   },
   paper: {
     name: 'paper',
-    imgUrl: 'https://img.icons8.com/?size=1000&id=FXMQoDW7KHma&format=png&color=000000',
+    imgUrl: 'https://img.icons8.com/?size=1000&id=RzRwnSkyUsZV&format=png&color=000000',
   },
   scissors: {
     name: 'scissors',
-    imgUrl: 'https://img.icons8.com/?size=1000&id=MzcVIhXVJv5P&format=png&color=000000',
+    imgUrl: 'https://img.icons8.com/?size=1000&id=pbtp0CwLMwWn&format=png&color=000000',
   },
 };
 
@@ -30,14 +30,6 @@ const App = () => {
   };
 
   const judgement = (user, computer) => {
-    // user.name === computer.name => tie
-    // user.name === 'rock', computer.name === 'scissors' => user win
-    // user.name === 'rock', computer.name === 'paper' => user lose
-    // user.name === 'scissors', computer.name === 'paper' => user win
-    // user.name === 'scissors', computer.name === 'rock' => user lose
-    // user.name === 'paper', computer.name === 'rock' => user win
-    // user.name === 'paper', computer.name === 'scissors' => user lose
-
     if (user.name === computer.name) {
       return 'TIE';
     } else if (user.name === 'rock') {
