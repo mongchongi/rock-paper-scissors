@@ -1,7 +1,15 @@
 const Player = (props) => {
+  let result;
+
+  if (props.player === 'computer' && props.result !== 'tie' && props.result !== '') {
+    result = props.result === 'win' ? 'lose' : 'win';
+  } else {
+    result = props.result;
+  }
+
   return (
-    <div className='player'>
-      <h2 className='player__name'>{props.name}</h2>
+    <div className={`player player--${result}`}>
+      <h2 className={`player__name player__name--${result}`}>{props.player.toUpperCase()}</h2>
       <img
         className='player__image'
         src={
@@ -9,7 +17,7 @@ const Player = (props) => {
         }
         alt={props.item ? props.item.name : 'question mark'}
       />
-      <h3 className='player__result'>WIN</h3>
+      <h3 className={`player__result player__result--${result}`}>{result.toUpperCase()}</h3>
     </div>
   );
 };

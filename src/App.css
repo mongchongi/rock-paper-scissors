@@ -26,9 +26,45 @@
   border-radius: 8px;
 }
 
+.player--tie {
+  border-color: rgba(118, 118, 118, 1);
+}
+
+.player--win {
+  border-color: rgba(74, 154, 49, 1);
+}
+
+.player--lose {
+  border-color: rgba(236, 78, 69, 1);
+}
+
+.player__name--tie {
+  color: rgba(0, 0, 0, 1);
+}
+
+.player__name--win {
+  color: rgba(74, 154, 49, 1);
+}
+
+.player__name--lose {
+  color: rgba(236, 78, 69, 1);
+}
+
 .player__image {
   width: 100%;
   display: block;
+}
+
+.player__result--tie {
+  color: rgba(0, 0, 0, 1);
+}
+
+.player__result--win {
+  color: rgba(74, 154, 49, 1);
+}
+
+.player__result--lose {
+  color: rgba(236, 78, 69, 1);
 }
 
 .game-board__controls {
